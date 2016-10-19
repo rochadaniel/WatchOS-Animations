@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11077"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchAnimation_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" title="SlidingText" id="t0M-RF-0Sb">
+                            <connections>
+                                <segue destination="gKd-ms-pTv" kind="push" id="AW9-RU-sJq"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Moving Button" id="ckJ-Rd-KcU">
+                            <connections>
+                                <segue destination="eYV-9I-9ek" kind="push" id="mf2-Ah-k2p"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="5hE-jg-ANp">
+            <objects>
+                <controller id="gKd-ms-pTv">
+                    <items>
+                        <group width="1" alignment="left" id="oXu-wt-uT7">
+                            <items>
+                                <imageView width="0.29999999999999999" height="49" alignment="left" image="1435274610_four-square" id="SX7-Iv-kpw"/>
+                                <group width="1" alignment="left" id="LlF-JB-Fby"/>
+                                <label alignment="left" text="Label" id="2op-1E-ukz"/>
+                            </items>
+                        </group>
+                        <group width="1" height="18" alignment="left" id="SNK-Pm-Uhm"/>
+                        <button width="1" alignment="left" title="Animate!" id="NPe-qp-57X"/>
+                        <button width="1" alignment="left" title="Reset" id="kDw-si-8sp"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="328" y="333"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="XoF-eQ-pGl">
+            <objects>
+                <controller id="eYV-9I-9ek">
+                    <items>
+                        <button width="1" alignment="left" title="Animate!" id="GoC-1I-cxN">
+                            <color key="backgroundColor" red="0.16862745100000001" green="0.60784313729999995" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="328" y="44"/>
+        </scene>
+    </scenes>
+</document>
