@@ -27,19 +27,30 @@
         <!--Interface Controller-->
         <scene sceneID="5hE-jg-ANp">
             <objects>
-                <controller id="gKd-ms-pTv">
+                <controller id="gKd-ms-pTv" customClass="InterfaceController" customModule="WatchAnimation_WatchKit_Extension">
                     <items>
                         <group width="1" alignment="left" id="oXu-wt-uT7">
                             <items>
-                                <imageView width="0.29999999999999999" height="49" alignment="left" image="1435274610_four-square" id="SX7-Iv-kpw"/>
+                                <imageView width="0.29999999999999999" height="39" alignment="left" image="1435274610_four-square" id="SX7-Iv-kpw"/>
                                 <group width="1" alignment="left" id="LlF-JB-Fby"/>
                                 <label alignment="left" text="Label" id="2op-1E-ukz"/>
                             </items>
                         </group>
                         <group width="1" height="18" alignment="left" id="SNK-Pm-Uhm"/>
-                        <button width="1" alignment="left" title="Animate!" id="NPe-qp-57X"/>
-                        <button width="1" alignment="left" title="Reset" id="kDw-si-8sp"/>
+                        <button width="1" alignment="left" title="Animate!" id="NPe-qp-57X">
+                            <connections>
+                                <action selector="animate" destination="gKd-ms-pTv" id="frG-bk-rDD"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Reset" id="kDw-si-8sp">
+                            <connections>
+                                <action selector="reset" destination="gKd-ms-pTv" id="pKb-iL-cDx"/>
+                            </connections>
+                        </button>
                     </items>
+                    <connections>
+                        <outlet property="spacerGroup" destination="LlF-JB-Fby" id="Fgw-Dd-rG2"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="328" y="333"/>
@@ -47,12 +58,20 @@
         <!--Interface Controller-->
         <scene sceneID="XoF-eQ-pGl">
             <objects>
-                <controller id="eYV-9I-9ek">
+                <controller id="eYV-9I-9ek" customClass="InterfaceController" customModule="WatchAnimation_WatchKit_Extension">
                     <items>
+                        <group width="1" height="2" alignment="left" id="UIa-kx-lLd"/>
                         <button width="1" alignment="left" title="Animate!" id="GoC-1I-cxN">
                             <color key="backgroundColor" red="0.16862745100000001" green="0.60784313729999995" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="animateMovingButton" destination="eYV-9I-9ek" id="TJ1-FB-a7y"/>
+                            </connections>
                         </button>
                     </items>
+                    <connections>
+                        <outlet property="animateButton" destination="GoC-1I-cxN" id="hld-kR-iHF"/>
+                        <outlet property="buttonSpacerGroup" destination="UIa-kx-lLd" id="WSU-Sb-5Z0"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="328" y="44"/>
